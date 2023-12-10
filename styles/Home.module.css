@@ -1,0 +1,90 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 83vh;
+}
+
+
+
+
+.navHome {
+  background-color: transparent;
+  color: var(--secondary-color);
+  font-size: 24px;
+  border: 0;
+}
+
+.navBut {
+  background-color: transparent;
+  color: #FFFFFF;
+  font-size: 24px;
+  border: 0;
+}
+
+.Hand {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 400px;
+  height: auto;
+  z-index: -1;
+}
+
+.start {
+  padding: 1rem;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  border-radius: 13px;
+  font-size: 36px;
+  width: 37%;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  margin-left: 8%;
+  align-items: center;
+  padding: 1rem;
+  gap: 5rem;
+}
+
+.header {
+  width: 100%;
+  box-shadow: 0px 0.3px 0px rgba(208, 240, 92, 1);
+}
+
+.welcomeHome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.button {
+  border-radius: 10px;
+}
+
+.welcome {
+  font-size: 128px;
+  color: #FFFFFF;
+  background-color: transparent;
+}
+
+.thrive {
+  font-size: 150px;
+  background-image: linear-gradient(to bottom, rgba(208, 240, 92, 1), rgba(208, 240, 92, 0));
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.divNavButton {
+  background-color: #6B6B6B;
+  padding: 1rem;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-around;
+  width: 15%;
+}
