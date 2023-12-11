@@ -7,11 +7,9 @@
 }
 
 
-
-
 .navHome {
   background-color: transparent;
-  color: var(--secondary-color);
+  color: var(--mindaro);
   font-size: 24px;
   border: 0;
 }
@@ -34,11 +32,12 @@
 
 .start {
   padding: 1rem;
-  color: var(--primary-color);
-  background-color: var(--secondary-color);
+  color: var(--soft-black);
+  background-color: var(--mindaro);
   border-radius: 13px;
   font-size: 36px;
   width: 37%;
+  border: none;
 }
 
 .navbar {
@@ -47,7 +46,8 @@
   margin-left: 8%;
   align-items: center;
   padding: 1rem;
-  gap: 5rem;
+  gap: 3rem;
+  width: 1000px;
 }
 
 .header {
@@ -87,4 +87,51 @@
   display: flex;
   justify-content: space-around;
   width: 15%;
+}
+
+@media only screen and (max-width: 768px) {
+  /* Styles for smaller screens */
+
+  .Hand {
+    opacity: 0; /* Initially set opacity to 0 */
+    transition: opacity 1s ease-in-out;
+  }
+
+  .welcome{
+    font-size: 110px;
+    transition: 300ms ease-in-out;
+  }
+  .thrive{
+    font-size: 120px;
+    transition: 300ms ease-in-out;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animated-text {
+  animation: slideIn 2s ease-in-out;
+}
+
+.animated-button {
+  opacity: 0; 
+  animation: fadeIn 1s ease-in-out 2s forwards; 
 }
