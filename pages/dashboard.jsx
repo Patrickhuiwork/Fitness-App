@@ -1,5 +1,6 @@
 import styles from '@/styles/Dashboard.module.css';
 import Link from 'next/link';
+import MealTracker from '../components/MealTracker';
 
 export default function Home() {
   return (
@@ -49,12 +50,16 @@ export default function Home() {
                     
                 </div>
                 <div className={styles.widget}>
-                    <h2 className={styles.widgetheader}>
-                    MEAL TRACKER
-                    </h2>
-                    <button className={styles.widgetbutton}> 
-                        VIEW LOG 
-                    </button>
+                    <div className={styles.mealscontainer}>
+                        <h2 className={styles.widgetheader}>
+                        MEAL TRACKER
+                        </h2>
+                        <button className={styles.widgetbutton2}> 
+                            <Link href='/mealLog'>
+                                VIEW LOG 
+                            </Link>
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
