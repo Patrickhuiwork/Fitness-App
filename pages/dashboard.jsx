@@ -20,13 +20,15 @@ export default function Home() {
             <h1 className={styles.heading}>DASHBOARD</h1>
             <div className={styles.maincont}>
                 <div className={styles.widget}>
-                    <h2 className={styles.widgetheader}>
-                    EXERCISE LOG
-                    </h2>
-                    <button className={styles.widgetbutton}> 
-                        VIEW LOG 
-                    </button>
+                    <div className={styles.buttoncontainer}>
+                        <h2 className={styles.widgetheader}>
+                        EXERCISE LOG
+                        </h2>
+                        <button className={styles.widgetbutton}> 
+                            VIEW LOG 
+                        </button>
 
+                    </div>
                 </div>
                 <div className={styles.widget}>
                     <h2 className={styles.widgetheader}>
@@ -35,16 +37,24 @@ export default function Home() {
                     
                 </div>
                 <div className={styles.widget}>
-                    <h2 className={styles.widgetheader}>
-                    WEIGHT LOG
-                    </h2>
+                    <div className={styles.buttoncontainer}>
+                        <h2 className={styles.widgetheader}>
+                        WEIGHT LOG
+                        </h2>
+                        <button className={styles.widgetbutton}> 
+                            VIEW LOG 
+                        </button>
+
+                    </div>
                     
                 </div>
                 <div className={styles.widget}>
                     <h2 className={styles.widgetheader}>
                     MEAL TRACKER
                     </h2>
-                    
+                    <button className={styles.widgetbutton}> 
+                        VIEW LOG 
+                    </button>
                 </div>
             </div>
         </section>
