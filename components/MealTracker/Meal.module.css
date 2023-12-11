@@ -38,6 +38,6 @@
   }
 
   .label {
-    color: white;
+    color: var(--anti-flash-white);
     font-family: 
   }
