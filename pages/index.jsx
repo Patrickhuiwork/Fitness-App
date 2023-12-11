@@ -1,5 +1,5 @@
 import styles from '@/styles/Home.module.css';
-
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -24,9 +24,12 @@ export default function Home() {
             <h1 className={`${styles.thrive} animated-text`}>
               THRIVE
             </h1>
-            <button className={`${styles.start} animated-button`}>
-              START NOW
-            </button>
+
+              <button className={`${styles.start} animated-button`}>
+                <Link href='/dashboard'>
+                  START NOW
+                </Link>
+              </button> 
           </div>
         </section>
       </main>
